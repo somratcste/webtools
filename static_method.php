@@ -6,5 +6,6 @@ class User
 		echo 'please enter your password';
 	}
 }
+ User ::pwd_string();
 
 ?>
