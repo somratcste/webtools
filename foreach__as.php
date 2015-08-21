@@ -6,3 +6,4 @@ foreach ($paper as $item) {
 	++$j;
 	# code...
 }
+?>
