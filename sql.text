@@ -1,0 +1,81 @@
+Mysql basic : 
+SELECT title FROM publications WHERE author = 'Charles Dickens';
+
+Database show : 
+show databases;
+
+Create Database : 
+CREATE DATABASE publications 
+
+Use Database : 
+USE publications
+
+Creating User : 
+GRANT PRIVILEGES ON database.object TO 'username'@'hostname' IDENTIFIED BY 'password';
+
+Creating a table called classics 
+CREATE TABLE classic (
+	author VARCHAR(128),
+	title VARCHAR(128),
+	type VARCHAR(16),
+	year CHAR(4) )
+	ENGINE MyISAM;
+)
+
+Describe classics:
+DESCRIBE classics;
+
+
+Create Table :
+CREATE TABLE tablename (fieldname INT UNSIGNED);
+
+Adding auto_increment column id : 
+ALTER TABLE classics ADD id INT UNSIGNED  NOT  NULL AUTO_INCREMENT KEY;
+
+Adding the auto_incrementing id column table creation :
+CREATE TABLE classics(
+	author VARCHAR(128),
+	title VARCHAR(128),
+	type VARCHAR(128),
+	year VARCHAR(16),
+	id INT UNSIGNED NOT NULL AUTO_INCREMENT KEY)
+	ENGINE MyISAM;
+
+Removind the id column : 
+ALTER TABLE classics DROP id;
+
+Adding data to a table : 
+INSERT INTO classics (author,title,type,year)
+VALUES ('ami','tumi','sei','2015')
+
+All select:
+SELECT * FROM classics;
+
+Renaming a table :
+ALTER TABLE classics RENAME class;
+
+Changing data type of a column :
+ALTER TABLE classics MODIFY year SMALLINT;
+
+Adding a new column : 
+ALTER TABLE classics ADD pages SMALLINT UNSIGNED;
+
+Renaming a column : 
+ALTER TABLE classics CHANGE type category VARCHAR(16);
+
+Removing a column : 
+ALTER TABLE classics DROP pages;
+
+Creating , Viewing and deleting a table : 
+CREATE TABLE disposable;
+DESCRIBE disposable;
+DROP TABLE disposable;
+SHOW tables;
+
+Adding index to classic:
+ALTER TABLE classics ADD INDEX(author(20)); 
+ALTER TABLE classics ADD INDEX(title(20)); 
+ALTER TABLE classics ADD INDEX(category(4)); 
+ALTER TABLE classics ADD INDEX(year); 
+DESCRIBE classics;
+
