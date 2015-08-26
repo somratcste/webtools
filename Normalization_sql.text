@@ -19,7 +19,7 @@ identify  each row with  a unique column or set of columns ( primary key).
 --Meet all the requirements of the second normal forms.
 --Remove columns that are not dependent upon the primary key. 
 
-Tutorial link : https://www.youtube.com/watch?v=JbjS7iujCbI 
+From youtube Tutorial link : https://www.youtube.com/watch?v=JbjS7iujCbI 
 
 Relationship : 
 There are three categories of relationships.
