@@ -1,0 +1,28 @@
+Normalization : 
+The process of separating your data into tables and creating primary keys is called
+normalization.
+
+Types : 
+1nf , 2nf , 3nf
+
+1. First Normal form (1nf) : 
+--eliminate duplicate columns from the same tables  
+--Create separate tables for each group of the related data and 
+identify  each row with  a unique column or set of columns ( primary key).
+
+2.  Second Normal form(2nf) : 
+--Meet all the requirements of the first normal form.
+--Remove subsets of data that apply to multiple rows of a table and place them in separate tables.
+--Create relationships between these new tables and  their predecessors through the use of foreign keys. 
+
+3. Third Normal Form (3nf) :
+--Meet all the requirements of the second normal forms.
+--Remove columns that are not dependent upon the primary key. 
+
+Relationship : 
+There are three categories of relationships.
+
+Types : 
+1. one to one : 
+2. one to many :
+3. many to many :  
